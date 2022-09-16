@@ -95,15 +95,26 @@ export const config = {
     },
     {
       name: "老婆1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
+      id: "o6W_15g7Bb-Ppf4Xny-OdOknZ22M",
+      useTemplateId: "Q2cmLBwOPvCfI7kOv_Qs46WJx8agwhXRMvyVDP0jXOk",
+      province: "四川",
+      city: "南充",
+      horoscopeDate: '11-11',
+      horoscopeDateType: '今日',
+      openUrl: "https://www.xuexi.cn",
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {"type": "*生日", "name": "媳妇儿", "year": "1991", "date": "11-11"},
+        {"type": "节日", "name": "结婚纪念日", "year": "2021", "date": "06-11"},
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {"type": "生日", "name": "张天翊", "year": "2022", "date": "06-11"},
+      ],
+      customizedDateList: [
+      // 在一起的日子
+        {"keyword": "love_day", date: "2019-05-19"},
+        // 结婚纪念日
+        {"keyword": "marry_day", date: "2021-06-11"},
+      ]
     },
     {
       name: "老婆2",
